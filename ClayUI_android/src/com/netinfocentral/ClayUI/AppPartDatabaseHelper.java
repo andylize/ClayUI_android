@@ -5,12 +5,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class AppPartsDatabaseHelper extends SQLiteOpenHelper {
+public class AppPartDatabaseHelper extends SQLiteOpenHelper {
 
  // define class variables
  	private static final int DATABASE_VERSION = 1;
  	private static final String DATABASE_NAME = "ClayUI.db";
- 	private static final String TABLE_NAME = "AppParts";
+ 	public static final String TABLE_NAME = "AppParts";
  	
  	// column definitions
  	public static final String COLUMN_ID = "_id";
@@ -25,7 +25,7 @@ public class AppPartsDatabaseHelper extends SQLiteOpenHelper {
  		COLUMN_VERSION + " integer);";
  		
  	// default constructor
- 	AppPartsDatabaseHelper(Context context) {
+ 	AppPartDatabaseHelper(Context context) {
  	    //this.databaseName = applicationName;
  	    super(context, DATABASE_NAME, null, DATABASE_VERSION);
  	}
@@ -39,7 +39,7 @@ public class AppPartsDatabaseHelper extends SQLiteOpenHelper {
  	// upgrade database if necessary
  	@Override
  	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
- 	    Log.w(AppPartsDatabaseHelper.class.getName(),
+ 	    Log.w(AppPartDatabaseHelper.class.getName(),
  		    "Upgrading database from version " + oldVersion + " to "
  				+ newVersion + ", which will destroy all old data");
  	    
