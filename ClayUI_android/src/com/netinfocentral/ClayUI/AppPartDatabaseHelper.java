@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class AppPartDatabaseHelper extends SQLiteOpenHelper {
 
- // define class variables
+    	// define class variables
  	private static final int DATABASE_VERSION = 1;
  	private static final String DATABASE_NAME = "ClayUI.db";
  	public static final String TABLE_NAME = "AppParts";
