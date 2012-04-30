@@ -12,12 +12,16 @@ public class AppBaseMain implements AppBaseMainInterface {
     
     // default constructor
     public AppBaseMain(String applicationName) {
-	this.applicationName = applicationName;
+    	this.applicationName = applicationName;
     }
     
     // properties
     public String getApplicationName() {
-	return this.applicationName;
+    	return this.applicationName;
+    }
+    
+    public String getDataTableName(int appPartID) {
+    	return "TableName";
     }
     
 }

@@ -6,17 +6,12 @@ public class AppPart {
     private long recordID;
     private String appPartName;
     private int version;
-    
-    //default constructor
-    public AppPart() {
-	this(1, "", 1);
-    }
-    
+        
     // main constructor
     public AppPart(long recordID, String appPartName, int version) {
-	this.recordID = recordID;
-	this.appPartName = appPartName;
-	this.version = version;
+		this.recordID = recordID;
+		this.appPartName = appPartName;
+		this.version = version;
     }
 
     /**
@@ -42,7 +37,7 @@ public class AppPart {
     
     @Override
     public String toString() {
-	return "AppPart [recordID="+ this.recordID + ", appPartName=" + this.appPartName + ", version="+ this.version + "]";
+    	return "AppPart [recordID="+ this.recordID + ", appPartName=" + this.appPartName + ", version="+ this.version + "]";
     }
 	
 }

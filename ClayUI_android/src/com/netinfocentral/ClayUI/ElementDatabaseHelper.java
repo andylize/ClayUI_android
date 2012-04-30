@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class ElementDatabaseHelper extends SQLiteOpenHelper {
 
- // define class variables
+	// define class variables
   	private static final int DATABASE_VERSION = 1;
   	private static final String DATABASE_NAME = "ClayUI.db";
   	public static final String TABLE_NAME = "Elements";
@@ -45,7 +45,7 @@ public class ElementDatabaseHelper extends SQLiteOpenHelper {
   	// upgrade database if necessary
   	@Override
   	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-  	    Log.w(AppPartDatabaseHelper.class.getName(),
+  	    Log.w(ElementDatabaseHelper.class.getName(),
   		    "Upgrading database from version " + oldVersion + " to "
   				+ newVersion + ", which will destroy all old data");
   	    

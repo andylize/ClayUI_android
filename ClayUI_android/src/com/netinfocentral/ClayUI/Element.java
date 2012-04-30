@@ -2,7 +2,7 @@ package com.netinfocentral.ClayUI;
 
 public class Element {
  // define instance variables
-    private long recordID;
+    private long recordID; // maps to ElementOptionID ClayUI database
     private int appPartID;
     private String elementName;
     private int elementType;
@@ -11,12 +11,12 @@ public class Element {
            
     // main constructor
     public Element(long recordID, int appPartID, String elementName, int elementType, String elementLabel, int version) {
-	this.recordID = recordID;
-	this.appPartID = appPartID;
-	this.elementName = elementName;
-	this.elementType = elementType;
-	this.elementLabel = elementLabel;
-	this.version = version;
+		this.recordID = recordID;
+		this.appPartID = appPartID;
+		this.elementName = elementName;
+		this.elementType = elementType;
+		this.elementLabel = elementLabel;
+		this.version = version;
     }
     
     /**
@@ -63,7 +63,7 @@ public class Element {
 
     @Override
     public String toString() {
-	return "AppPart [recordID="+ this.recordID + ", appPartID=" + this.appPartID + ", elementName=" + this.elementName +
-		 ", elementType=" + this.elementType + ", elementLabel=" + this.elementLabel + ", version="+ this.version + "]";
+		return "AppPart [recordID="+ this.recordID + ", appPartID=" + this.appPartID + ", elementName=" + this.elementName +
+			 ", elementType=" + this.elementType + ", elementLabel=" + this.elementLabel + ", version="+ this.version + "]";
     }
 }
